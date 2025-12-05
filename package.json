@@ -1,0 +1,30 @@
+{
+  "name": "aegis-datetime-picker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A custom HTML element datetime picker built with Svelte",
+  "main": "dist/aegis-datetime-picker.js",
+  "module": "dist/aegis-datetime-picker.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "svelte",
+    "web-component",
+    "custom-element",
+    "datetime-picker",
+    "date-picker",
+    "time-picker"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "svelte": "^4.2.19",
+    "vite": "^5.4.11"
+  }
+}

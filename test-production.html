@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aegis DateTime Picker - Production Test</title>
+  <script type="module" src="/dist/aegis-datetime-picker.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 40px;
+      background: #f1f5f9;
+    }
+    h1 { color: #1e293b; }
+    .demo { 
+      background: white; 
+      padding: 20px; 
+      border-radius: 8px; 
+      margin: 20px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .demo h2 { margin-top: 0; color: #3b82f6; }
+  </style>
+</head>
+<body>
+  <h1>Production Build Test</h1>
+  <p>This page loads the built bundle from <code>/dist/aegis-datetime-picker.js</code></p>
+
+  <div class="demo">
+    <h2>DateTime Picker</h2>
+    <aegis-datetime-picker 
+      mode="datetime" 
+      date-format="MM/DD/YYYY"
+      time-format="hh:mm A">
+    </aegis-datetime-picker>
+  </div>
+
+  <div class="demo">
+    <h2>Date Only</h2>
+    <aegis-datetime-picker 
+      mode="date" 
+      date-format="YYYY-MM-DD">
+    </aegis-datetime-picker>
+  </div>
+
+  <div class="demo">
+    <h2>Time Only (24h)</h2>
+    <aegis-datetime-picker 
+      mode="time" 
+      time-format="HH:mm">
+    </aegis-datetime-picker>
+  </div>
+
+  <div class="demo">
+    <h2>Popup Mode</h2>
+    <aegis-datetime-picker 
+      mode="datetime" 
+      popup
+      date-format="DD.MM.YYYY"
+      time-format="HH:mm">
+    </aegis-datetime-picker>
+  </div>
+</body>
+</html>
